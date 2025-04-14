@@ -6,7 +6,7 @@
     <title>Form for Olympiad</title>
 </head>
 <body>
-    <forms method="post" enctype="plain/text" action="https://formspree.io/f/mvgklewz">
+    <form method="post" enctype="multipart/form-data" action="https://formspree.io/f/mvgklewz">
         <label>Enter Name : </label>
         <input type="text" name="name">
         <br><br>
@@ -35,7 +35,7 @@
         <label>Enter Father's Name : </label>
         <input type="text" name="father_name">
         <br><br>
-        <label>Enter Father's Phobe Number : </label>
+        <label>Enter Father's Phone Number : </label>
         <input type="text" name="father_phone">
         <br><br>
         <label>Enter Mother's Name : </label>
@@ -45,7 +45,7 @@
         <input type="text" name="mother_phone">
         <br><br>
         <label>Select State or Union Territory : </label>
-        <select>
+        <select name="state">
             <option value="" selected disabled hidden>Select an option</option>
             <option value="Andaman">Andaman and Nicobar Islands</option>
             <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -86,13 +86,13 @@
         </select>
         <br><br>
         <label>Enter Address : </label><br>
-        <textarea rows="5" and cols="50"></textarea>
+        <textarea rows="5" and cols="50" name="address"></textarea>
         <br><br>
         <label>Enter Date of Birth : </label>
         <input type="date" name="dob">
         <br><br>
         <label>Select Class : </label>
-        <select>
+        <select name="class">
             <option value="I">Class I</option>
             <option value="II">Class II</option>
             <option value="III">Class III</option>
@@ -146,6 +146,6 @@
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
         <br><br>
-    </forms>
+    </form>
 </body>
 </html>
